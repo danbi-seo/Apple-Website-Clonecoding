@@ -1,9 +1,23 @@
-export default function App() {
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Highlights from "./components/Highlights";
+import Model from "./components/Model";
+import Features from "./components/Features";
+import HowItWorks from "./components/HowItWorks";
+import Footer from "./components/Footer";
+
+function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-green-500">
-      <h1 className="text-4xl font-bold text-white drop-shadow-lg">
-        Tailwind CSS가 잘 적용되었어요!
-      </h1>
-    </div>
+    <main className="bg-black overflow-y-auto overflow-x-hidden">
+      <Navbar />
+      <Hero />
+      <Highlights />
+      <Model />
+      <Features />
+      <HowItWorks />
+      <Footer />
+    </main>
   );
 }
+
+export default App;
